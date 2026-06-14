@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Bear Ninja Hunter Revisited game using HTML buttons, JavaScript functions, arrays, and random computer choices.">
+    <meta name="author" content="Jesse Nkinsi">
+    <title>Bear Ninja Hunter Revisited</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <main class="page-container">
+        <h2>Bear Ninja Hunter Revisited</h2>
+
+        <section id="rulesSection" class="rules-section">
+            <p class="intro-text">Choose Bear, Ninja, or Hunter to play against the computer.</p>
+
+            <div class="rules-wrapper">
+                <ul>
+                    <li>Bear beats Ninja</li>
+                    <li>Ninja beats Hunter</li>
+                    <li>Hunter beats Bear</li>
+                </ul>
+            </div>
+        </section>
+
+        <hr>
+
+        <section class="button-section" aria-label="Game choices">
+            <button type="button" onclick="playGame('Bear')">Bear</button>
+            <button type="button" onclick="playGame('Ninja')">Ninja</button>
+            <button type="button" onclick="playGame('Hunter')">Hunter</button>
+        </section>
+
+        <hr>
+
+        <section id="resultsSection" class="results-section hidden" aria-live="polite">
+            <div id="gameResults" class="game-results"></div>
+            <div id="scoreResults" class="score-results"></div>
+            <button type="button" id="playAgainButton" onclick="showInitialPage()">Play Again</button>
+            <button type="button" id="endSessionButton" onclick="resetSession()">No, End Game</button>
+        </section>
+    </main>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
