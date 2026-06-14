@@ -1,0 +1,115 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f7f7f7;
+    color: #222222;
+}
+
+.page-container {
+    max-width: 760px;
+    margin: 40px auto;
+    padding: 30px 20px;
+    text-align: center;
+    background-color: #ffffff;
+    border: 1px solid #dddddd;
+    border-radius: 8px;
+}
+
+h2 {
+    margin-top: 0;
+    margin-bottom: 22px;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.intro-text {
+    margin-bottom: 16px;
+    font-size: 18px;
+}
+
+.rules-wrapper {
+    display: inline-block;
+    text-align: left;
+    margin-bottom: 18px;
+}
+
+.rules-wrapper ul {
+    margin: 0;
+    padding-left: 24px;
+    font-size: 17px;
+    line-height: 1.7;
+}
+
+hr {
+    width: 430px;
+    max-width: 90%;
+    margin: 20px auto;
+    border: none;
+    border-top: 1px solid #999999;
+}
+
+.button-section {
+    display: flex;
+    justify-content: center;
+    gap: 14px;
+    margin: 18px 0;
+}
+
+button {
+    min-width: 105px;
+    padding: 10px 18px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #ffffff;
+    background-color: #333333;
+    border: 2px solid #222222;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #555555;
+}
+
+.results-section {
+    margin-top: 24px;
+    text-align: center;
+}
+
+.game-results {
+    display: inline-block;
+    min-width: 360px;
+    max-width: 90%;
+    padding: 18px 24px;
+    text-align: left;
+    font-size: 21px;
+    font-weight: bold;
+    line-height: 1.6;
+    background-color: #eeeeee;
+    border: 1px solid #555555;
+}
+
+.score-results {
+    display: inline-block;
+    min-width: 300px;
+    margin-top: 18px;
+    margin-bottom: 18px;
+    text-align: left;
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+#playAgainButton,
+#endSessionButton {
+    display: inline-block;
+    margin: 8px 6px 0;
+    background-color: #555555;
+}
+
+.hidden {
+    display: none;
+}
